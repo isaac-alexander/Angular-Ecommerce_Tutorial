@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { ProductsList } from "./pages/products-list/products-list";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Header, ProductsList],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-header />
 
-    <router-outlet />
+    <app-products-list />
   `,
   styles: [],
 })
