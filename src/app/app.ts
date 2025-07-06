@@ -5,12 +5,13 @@ import { ProductsList } from "./pages/products-list/products-list";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, ProductsList],
+  imports: [Header, RouterOutlet],
   template: `
     <app-header />
 
-    <app-products-list />
-  `,
+
+    <router-outlet />
+`,
   styles: [],
 })
 export class App {
